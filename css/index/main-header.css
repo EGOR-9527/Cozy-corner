@@ -1,0 +1,36 @@
+header {
+  display: grid;
+  position: relative;
+  font-size: 1VW;
+  grid-template-columns: auto 1fr auto auto;
+  background-color: #0C0A0D;
+  align-items: center;
+  color: #FFB190;
+  width: 100%;
+  gap: 3vw;
+  z-index: 1000;
+  opacity: 0.978;
+
+}
+
+header .name-cofe, header .svg-logo {
+  justify-self: start;
+  margin: 0;
+  user-select: none;
+
+}
+
+.svg-logo{
+  width: calc(100vw / 10);
+}
+
+header .container-interaction {
+  font-size: calc(100vw / 50);
+  gap: calc(100% / 15);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+header > .boorger {
+  display: none;
+}

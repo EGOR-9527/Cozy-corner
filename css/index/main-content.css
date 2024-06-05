@@ -1,0 +1,110 @@
+/* Настройка секции */
+section {
+  width: 100vw;
+  height: calc(100vw / 2.25);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3%;
+}
+
+section * img {
+  --img-width--: 45vw;
+  --img-height--: 100%;
+
+  width: var(--img-width--);
+  height: var(--img-height--);
+  border-radius: 1vw;
+  pointer-events: none;
+}
+
+section * svg {
+  width: 20vw;
+}
+
+/* Название блюда */
+.right-block > svg {
+  margin-left: 10vw;
+  height: auto;
+}
+
+.left-block > svg {
+  margin-right: 10vw;
+  height: auto;
+}
+
+.dish {
+  position: relative;
+  margin-top: 15vh;
+  margin-left: 5vw;
+  color: #FFB190;
+  font-size: 1.6vw;
+  user-select: none;
+}
+
+.block-img-text {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+/* Блок текста справа */
+.right-block * .block-text {
+  position: relative;
+  margin-left: calc(-45vw / 2.25);
+  font-size: calc(45vw / 50);
+  margin-bottom: 5vh;
+  height: calc(45vw / 10);
+  width: 20vw;
+  color: #FFB190;
+  background-color: #241C19;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  opacity: 0.9;
+
+  border-top-left-radius: 1vw;
+  border-bottom-left-radius: 1vw;
+}
+
+/* Блок текста слева */
+.left-block * .block-text {
+  position: relative;
+  margin-left: calc(-45vw / 2.25);
+  font-size: calc(45vw / 50);
+  margin-bottom: 5vh;
+  height: calc(45vw / 10);
+  width: 20vw;
+  color: #FFB190;
+  background-color: #241C19;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  opacity: 0.9;
+
+  border-top-left-radius: 1vw;
+  border-bottom-left-radius: 1vw;
+}
+
+/* Описание кофе */
+.discription-cofe {
+  color: #FFB190;
+  width: 100vw;
+  margin: calc(50vh / 4) 20vw 0;
+  display: flex;
+  font-size: 1.4vw;
+  user-select: none;
+}
+
+.main-content {
+  margin-top: 3vh;
+  user-select: none;
+}
+
+.block-text > svg {
+  width: 3vw;
+}
+
+.block-text {
+  gap: 1vw;
+}

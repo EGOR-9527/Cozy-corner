@@ -1,0 +1,12 @@
+.feedback-container{
+    width: 60%;
+    height: auto;
+    border: 2px solid red;
+    margin: 20%;
+}
+
+.avotar-block > img{
+    width: 30%;
+    border-radius: 10px;
+    border: 2px solid red;
+}

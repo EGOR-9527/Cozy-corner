@@ -1,0 +1,54 @@
+/* Стилизация изображения с кофе */
+.start-img-cofe {
+  width: 100%;
+  min-width: 50vw;
+  min-height: 50vh;
+  max-height: 100vh;
+  aspect-ratio: 2 / 5.5;
+  object-fit: cover;
+  object-position: right left;
+}
+
+
+
+/* Стилизация кнопки */
+.cool__Button__wrapper {
+  --custom__animated__button__opacity: 0;
+  background-color: #FFB190;
+  position: absolute;
+  margin-top: 80vh;
+  margin-left: 70vw;
+  --custom__animated__button__width: 0px;
+  width: calc(100px + var(--custom__animated__button__width));
+  height: auto;
+  transition: width 0.7s ease-in-out, border-radius 0.2s ease-in-out;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.cool__Button__wrapper:hover {
+  height: auto;
+  cursor: pointer;
+  --custom__animated__button__opacity: 1;
+  --custom__animated__button__width: 359px;
+}
+
+/* Стилизация текста кнопки */
+.Button_text {
+  opacity: var(--custom__animated__button__opacity);
+  overflow: hidden;
+  transition: width 0.8s ease-in-out, opacity 0.6s ease-in-out;
+  margin-top: 27px;
+  margin-left: 100px;
+  position: absolute;
+  white-space: nowrap;
+  width: var(--custom__animated__button__width);
+}
+
+.Button_text > p {
+  text-align: left;
+  font-size: min(1.04167vw, 1.85185vh);
+  font-weight: 400;
+  color: white;
+  transition: all 0.8s ease-in-out;
+}
